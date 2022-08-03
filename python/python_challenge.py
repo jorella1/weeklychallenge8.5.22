@@ -12,4 +12,16 @@ digits_count(1289396387328) ➞ 13
 Notes
 
 All inputs are integers but some are in exponential form, deal with it accordingly.
-You are expected to come up with a solution using the concept of recursion or the so-called recursive approach. """
+You are expected to come up with a solution using the concept of recursion or 
+the so-called recursive approach. """
+
+
+count = 0
+def digits_count(num):
+    if(num == 0):
+        return count
+    else:
+        return count + 1 + digits_count(num//10)
+        
+print(digits_count(1289396387328))
+
