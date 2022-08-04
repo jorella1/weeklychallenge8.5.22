@@ -16,7 +16,7 @@ You are expected to come up with a solution using the concept of recursion or
 the so-called recursive approach. """
 
 def digits_count(num):
-    if(num < 10):
+    if(abs(num) < 10):
         return 1
     else:
         return 1 + digits_count(num//10)
